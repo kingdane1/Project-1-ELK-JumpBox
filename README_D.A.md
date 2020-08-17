@@ -3,6 +3,7 @@
 The files in this repository were used to configure the network depicted below.
 # Diagram 
 ![Diagram](Diagrams/Could Diagram.png)
+
 https://github.com/kingdane1/Project-1-ELK-JumpBox/blob/master/Diagrams/Could%20Diagram.png
 
 # Screenshots 
