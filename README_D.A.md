@@ -1,13 +1,14 @@
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
+
+# Screenshots 
+![screenshots] (https://github.com/kingdane1/Project-1-ELK-JumpBox/tree/master/Ansible)
+
 # Diagram 
 ![Diagram](Diagrams/Could Diagram.png)
 
 https://github.com/kingdane1/Project-1-ELK-JumpBox/blob/master/Diagrams/Could%20Diagram.png
-
-# Screenshots 
-![screenshots](https://github.com/kingdane1/Project-1-ELK-JumpBox/tree/master/Ansible)
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the __install-elk.yml__ file may be used to install only certain pieces of it, such as __Filebeat__.
