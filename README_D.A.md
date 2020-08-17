@@ -5,11 +5,13 @@ The files in this repository were used to configure the network depicted below.
 ![Diagram](Diagrams/Could Diagram.png)
 https://github.com/kingdane1/Project-1-ELK-JumpBox/blob/master/Diagrams/Could%20Diagram.png
 
+# Screenshots
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the __install-elk.yml__ file may be used to install only certain pieces of it, such as __Filebeat__.
 
 
-#This document contains the following details:
+This document contains the following details:
 - Description of the Topology
 - Access Policies
 - ELK Configuration
@@ -63,10 +65,10 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO:__jump box lessens on erros and you can use the jump box to install and configuer all other machines on the network than ssh-in into all of them__
+-__jump box lessens on erros and you can use the jump box to install and configuer all other machines on the network than ssh-in into all of them__
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- _In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 -__Install docker.io__
 - __Install python-pip__
 - __Install docker__
@@ -84,12 +86,12 @@ This ELK server is configured to monitor the following machines:
 - __web-2  10.0.0.6__
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- _Specify which Beats you successfully installed_
 - __filebeat__
 - __mertricbeat__
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._ (list what file beat and metric bead does)
+- In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._ (list what file beat and metric bead does)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -99,7 +101,7 @@ SSH into the control node and follow the steps below:
 - Update the __host line in the configuration__ file to include __Elk IP____
 - Run the playbook, and navigate to __pplaybook__ __Kibana page the the filebeat page to see the data__ to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+_Answer the following questions to fill in the blanks:_
 - __filebeat.yml__ is the playbook? Where do you copy it? it is located in  __/etc/filebeat/filebeat.yml__
 - _Which file do you update to make Ansible run the playbook on a specific machine? The configuration file
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on?
