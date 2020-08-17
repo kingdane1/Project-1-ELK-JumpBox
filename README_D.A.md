@@ -2,13 +2,10 @@
 
 The files in this repository were used to configure the network depicted below.
 # Diagram 
-![Diagram]
-
-#screeshot
-![Screenshot]
+![Diagram](Diagrams/Could Diagram.png)
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the install-elk.yml file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the __install-elk.yml__ file may be used to install only certain pieces of it, such as __Filebeat__.
 
 
 #This document contains the following details:
@@ -25,9 +22,11 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly , in addition to restricting distribued to the network.
 - Load balancers provide servers with security against attacks such as payloads be equally distrubuting traffic across servers on the network. One advantage of using a Jumpbox is to provide initial administrative sercurity when configuring your virtual network while reducing the risks of threats.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files and system loggs.
-- _TODO: File beat logs files and loactions you specify. it pulls log events and sends it to
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the __files__ and __system loggs__
+- _What does Filebeat watch for?_
+__File beat logs files and loactions you specify. it gathers log events__
+-  What does Metricbeat record?_
+__ from time to time Metricbeat collects metrics from the opersting systems and other running services on the server__
 
 The configuration details of each machine may be found below.
 
@@ -36,7 +35,7 @@ The configuration details of each machine may be found below.
 | Jump Box | Gateway  | 10.0.0.4   | Linux(Ubuntu 18.04)  |
 | Web-1    | Server   | 10.0.0.5   | Linux(Ubuntu 18.04   |
 | Web-2    | Server   | 10.0.0.6   | Linux(Ubuntu 18.04)  |
-| Elk-Vm   | Log-Server  | 10.1.0.4  | Linux (Ubuntu 18.04) |     
+| Elk-Vm   |Log-Server| 10.1.0.4   | Linux (Ubuntu 18.04) |     
 
 ### Access Policies
 
@@ -95,9 +94,9 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _configuration_ file to /etc/ansible/.
-- Update the _host line in the configuration_ file to include__Elk ip____
-- Run the playbook, and navigate to__pplaybook__ __Kibana page the the filebeat page to see the data__ to check that the installation worked as expected.
+- Copy the __configuration__ file in __/etc/ansible/__.
+- Update the __host line in the configuration__ file to include __Elk IP____
+- Run the playbook, and navigate to __pplaybook__ __Kibana page the the filebeat page to see the data__ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - __filebeat.yml__ is the playbook? Where do you copy it? it is located in  __/etc/filebeat/filebeat.yml__
