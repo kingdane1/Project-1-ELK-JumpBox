@@ -1,11 +1,10 @@
+## CyberSecurity Bootcamp _ Azure Cloud Deployment Project
+
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
-# Screenshots 
-![screenshots] (https://github.com/kingdane1/Project-1-ELK-JumpBox/tree/master/Ansible)
-
-# Diagram 
+# Cloud Diagram 
 ![Diagram](https://github.com/kingdane1/Project-1-ELK-JumpBox/blob/b29cc481bf0410bbbe0a39047c681cc01833bfdb/Diagrams/Could%20Diagram.png)
 
 
@@ -78,7 +77,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 #screenshots
-![screenshot-docker-ps] (https://github.com/kingdane1/Project-1-ELK-JumpBox/blob/master/Ansible/Docker%20PS.JPG)
+![screenshot-docker-ps](https://github.com/kingdane1/Project-1-ELK-JumpBox/blob/master/Ansible/Docker%20PS.JPG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -109,6 +108,9 @@ _Answer the following questions to fill in the blanks:_
     - __Edit the hont line in the configuration file to add the Elk IP__
 - Which URL do you navigate to in order to check that the ELK server is running?
 - __http://[elk.ip]:5601/app/kibana.__
+
+# Additional Screenshots 
+![screenshots](https://github.com/kingdane1/Project-1-ELK-JumpBox/tree/master/Ansible)
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 - ssh azureuser@JumpBoxPublicIP
